@@ -1,0 +1,23 @@
+info:
+  name: loginUser
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3333/loginUser
+  body:
+    type: json
+    data: |-
+      {
+        "Email": "guaranajesus00@gmail.com",
+        "Senha": "jesus",
+        "Tipo": "cliente"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

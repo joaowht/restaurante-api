@@ -1,0 +1,24 @@
+info:
+  name: adicionarPedido
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3333/adicionarPedido
+  body:
+    type: json
+    data: |-
+      {
+        "ID_usuario": 2,
+        "valor_total": 42.50,
+        "status": "Em preparo",
+        "data": "2026-11-17"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: atualizarProduto
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3333/atualizarProduto
+  body:
+    type: json
+    data: |-
+      {
+          "id": 1,
+          "Nome": "Macarrão à Bolonhesa Especial",
+          "Descricao": "Macarrão com molho de tomate, carne moída e queijo.",
+          "Preco": 29.90,
+          "Categoria": "Massas",
+          "Disponivel": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

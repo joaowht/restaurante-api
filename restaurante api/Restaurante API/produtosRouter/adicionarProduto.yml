@@ -1,0 +1,25 @@
+info:
+  name: adicionarProduto
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3333/adicionarProduto
+  body:
+    type: json
+    data: |-
+      {
+          "Nome": "Suco Natural de Maracujá",
+          "Descricao": "Suco natural de maracujá feito na hora.",
+          "Preco": 8.00,
+          "Categoria": "Bebidas",
+          "Disponivel": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
