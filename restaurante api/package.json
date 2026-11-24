@@ -17,5 +17,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  }
 }
