@@ -177,4 +177,4 @@ usuarioRouter.delete("/deletarUser", (req, res) => {
     );
 });
 
-export { usuarioRouter };
+export { usuarioRouter }
